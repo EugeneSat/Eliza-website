@@ -697,7 +697,7 @@ img {
   }
 }
 .contacts {
-  margin-bottom: 80px;
+  margin-bottom: 480px;
 }
 
 .contacts__cont {
@@ -810,9 +810,7 @@ img {
 }
 
 .contats_flex {
-  margin-top: 60px;
-  display: -ms-grid;
-  display: grid;
+  margin-top: 10px;
   -ms-grid-columns: 1fr 6rem 1fr;
   grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 6rem;
@@ -835,7 +833,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 1000px;
+    margin-bottom: 10px;
   }
 
   .contacts__content {
@@ -858,6 +856,10 @@ img {
 .footer_title,
 .footer_link {
   color: #181B35;
+}
+
+.footer_link:hover {
+  color: #292D57;
 }
 
 .footer_title {
@@ -913,7 +915,7 @@ img {
 .footer_copy {
   display: block;
   margin-top: 4.5rem;
-  color: #5A58E2;
+  color: #292D57;
   font-size: 12px;
   text-align: center;
   padding-bottom: 40px;
