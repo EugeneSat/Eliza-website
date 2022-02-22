@@ -15,17 +15,19 @@
 
    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
 
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
   <title>Eliza | Юрист</title>
 </head>
 <body>
 
-     <header class="header cont">
-<!---
+     <header class="header cont" data-aos="fade-down">
+
        <nav class="nav cont">
            <a href="#" class="nav_logo">Eliza</a>
-
-           <div class="nav__menu flex">
+          <!----
+           <div class="nav__menu">
              <ul class="nav__list">
                <li class="nav__item">
                  <a href="#home" class="nav__link active_link">
@@ -55,10 +57,13 @@
              </ul>
            </div>
 
+   --->   <select id="theme" class="theme">
+            <option value="dark" class="theme_option">Dark <i class='bx bx-moon change_theme'></i></option>
+            <option value="light" class="theme_option">Light <i class='bx bx-sun'></i></option>
 
-           <i class='bx bx-moon change_theme' ></i>
+          </select>
        </nav>
-       ---->
+
      </header>
 
      <!--MAIN-->
@@ -70,23 +75,23 @@
               <div class="home__data">
                 <!---Главная инфа--->
                 <div class="flex">
-                <span class="home__greeting">Привет, Я</span>
-                <h1 class="home__name">Eлизавета</h1>
-                <h3 class="home__education">Квалифицированный Юрист</h3>
+                <span class="home__greeting" data-aos="fade-up"  data-aos-duration="200">Привет, Я</span>
+                <h1 class="home__name" data-aos="fade-up"  data-aos-duration="300">Eлизавета</h1>
+                <h3 class="home__education" data-aos="fade-up"  data-aos-duration="400">Квалифицированный Юрист</h3>
                 <!---Кнопки--->
-                <div class="home__buttons ">
-                  <a href="#" class="button_1 button_2" dowmload="">Скачать CV</a>
+                <div class="home__buttons " data-aos="fade-up"  data-aos-duration="400">
+                  <a href="#" class="button_1 button_2" dowmload="#">Скачать CV</a>
                   <a href="#about" class="button_2">Обо мне</a>
                 </div>
                 <!---ККартинка--->
-                <div class="home__handle">
+                <div class="home__handle" data-aos="fade-up"  data-aos-duration="500">
                   <img src="img/MajorEliza.png" alt="img" class="home__img" >
                 </div>
 
 
                 </div>
                 <!---Соцсети--->
-                <div class="home__social">
+                <div class="home__social" data-aos="fade-up"  data-aos-duration="600">
                   <a href="#instagram" class="home__social_link">
                     <i class='bx bxl-instagram'></i>
                   </a>
@@ -99,16 +104,16 @@
                 </div>
               </div>
 
-              <a href="#user" class="home__scroll">
+              <a href="#about" class="home__scroll" data-aos="fade-up"  data-aos-duration="500">
                 <i class='bx bx-mouse home__scroll_icon'></i>
-                <span class="home__scroll_name" href="#about">Скролл Вниз</span>
+                <span class="home__scroll_name" >Скролл Вниз</span>
               </a>
             </div>
        </section>
        <!--!HOME-->
        <!---ABOUT---->
-       <section class="about section flex" id="about">
-         <span class="section_subtitle">Вступление</span>
+       <section class="about section flex" id="about" data-aos="fade-up" data-aos-duration="200" >
+         <span class="section_subtitle"></span>
          <h2 class="section_title">Обо мне</h2>
 
          <div class="about_cont cont grid">
@@ -143,7 +148,7 @@
        </section>
               <!---!ABOUT---->
               <!---SCILLS---->
-              <section class="scills section flex" id="work">
+              <section class="scills section flex" id="work" data-aos="fade-up" data-aos-duration="200">
                 <span class="section_subtitle"></span>
                 <h2 class="section_title">Опыт</h2>
 
@@ -211,7 +216,7 @@
               </section>
               <!---!SCILLS---->
               <!---SERVISES---->
-              <section class="servises section flex">
+              <section class="servises section flex" >
                 <span class="section_subtitle"></span>
                 <h2 class="section_title">Что я могу</h2>
 
@@ -254,7 +259,7 @@
                     <div class="servises__modal">
                         <div class="servises__modal_content">
                       <i class='bx bx-x servises__modal_close'></i>
-                      <h3 class="servises__modal_title">Консультация</h3>
+                      <h3 class="servises__modal_title">введение бизнеса</h3>
                       <p class="servises__modal_desc">Отвечу на все интересующие вас вопросы в области юриспруденции.</p>
 
                       <ul class="servises__modal_list">
@@ -283,7 +288,7 @@
                     <div class="servises__modal">
                       <div class="servises__modal_content">
                       <i class='bx bx-x servises__modal_close'></i>
-                      <h3 class="servises__modal_title">Консультация</h3>
+                      <h3 class="servises__modal_title">Заполнение документов</h3>
                       <p class="servises__modal_desc">Отвечу на все интересующие вас вопросы в области юриспруденции.</p>
 
                       <ul class="servises__modal_list">
@@ -308,7 +313,7 @@
               </section>
               <!---!SERVISES---->
               <!---TESTIMONAIL---->
-              <section class="test section flex" id="test">
+              <section class="test section flex" id="test" data-aos="fade-up" data-aos-duration="200">
                 <span class="section_subtitle"></span>
                 <h2 class="section_title">Отзывы</h2>
 
@@ -336,7 +341,7 @@
               </section>
               <!---!TESTIMONAIL---->
               <!---CONTACTS---->
-              <section class="contacts section flex " id="contacts">
+              <section class="contacts section flex " id="contacts" data-aos="fade-up" data-aos-duration="200">
                 <span class="section_subtitle"></span>
                 <h2 class="section_title">Контакты</h2>
                 <div class="conacts__cont cont ">
@@ -373,7 +378,7 @@
                     </div>
                   </div>
                   <div class="contacts__content">
-                    <h3 class="contacts__title">Задайте свой вопрос</h3>
+                    <h3 class="contacts__title ots">Задайте свой вопрос</h3>
 
                     <form class="contacts__form" action="index.html" method="post">
                               <div class="contacts__form_div">
@@ -400,6 +405,8 @@
               <!---!CONTACTS---->
      </main>
 
+
+     <!--FOOTER-->
      <footer class="footer">
        <div class="footer_cont">
          <h1 class="footer_title">Eliza</h1>
@@ -432,5 +439,6 @@
        </div>
      </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

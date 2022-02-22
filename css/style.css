@@ -84,12 +84,7 @@ img {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-  margin-top: 25px;
+  padding-top: 60px;
 }
 
 .nav {
@@ -116,21 +111,11 @@ img {
 }
 
 .nav__menu {
-  position: fixed;
-  bottom: 1rem;
+  bottom: 20px;
+  z-index: 50;
   background-color: #292D57;
-  min-width: 968px;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .change_theme {
@@ -566,6 +551,15 @@ img {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .servises__modal_content {
@@ -573,6 +567,7 @@ img {
   background-color: #5A58E2;
   padding: 4.5rem 1.5rem 2.5rem;
   border-radius: 1.5rem;
+  max-width: 400px;
 }
 
 .servises__modal_title,
@@ -697,7 +692,7 @@ img {
   }
 }
 .contacts {
-  margin-bottom: 480px;
+  margin-bottom: 100px;
 }
 
 .contacts__cont {
@@ -706,6 +701,7 @@ img {
 }
 
 .contacts__title {
+  margin-bottom: 30px;
   text-align: center;
   font-size: 18px;
 }
@@ -757,7 +753,7 @@ img {
   -webkit-column-gap: 0.25rem;
      -moz-column-gap: 0.25rem;
           column-gap: 0.25rem;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .contacts__botton:hover .contacts__botton_icon {
@@ -766,7 +762,7 @@ img {
 }
 
 .contacts__botton_icon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -810,9 +806,17 @@ img {
 }
 
 .contats_flex {
-  margin-top: 10px;
-  -ms-grid-columns: 1fr 6rem 1fr;
-  grid-template-columns: repeat(2, 1fr);
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-column-gap: 6rem;
      -moz-column-gap: 6rem;
           column-gap: 6rem;
@@ -822,6 +826,10 @@ img {
 }
 
 @media (max-width: 615px) {
+  .contacts {
+    margin-bottom: 500px;
+  }
+
   .contats_flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -833,16 +841,14 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 10px;
-  }
-
-  .contacts__content {
-    margin-top: 40px;
   }
 
   .contacts__title {
-    margin-top: 60px;
     margin-bottom: 20px;
+  }
+
+  .ots {
+    margin-top: 60px;
   }
 }
 .contacts__click {
@@ -920,4 +926,69 @@ img {
   text-align: center;
   padding-bottom: 40px;
   letter-spacing: 2px;
+}
+
+.theme {
+  background-color: #181B35;
+  color: white;
+  border-color: #181B35;
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: 1px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+
+.theme_option {
+  display: inline-block;
+  width: 50px;
+}
+
+body.theme-light {
+  background-color: #C6E6ED;
+}
+body.theme-light .theme {
+  color: #181B35;
+  background-color: #C6E6ED;
+  border-color: #C6E6ED;
+}
+body.theme-light .nav_logo {
+  color: #181B35;
+}
+body.theme-light .nav_logo:hover {
+  color: #72CED3;
+}
+body.theme-light .button_1 {
+  color: #C6E6ED;
+  border: none;
+}
+body.theme-light .home__greeting {
+  color: #181B35;
+}
+body.theme-light .home__name {
+  color: #181B35;
+}
+body.theme-light .home__education {
+  color: #181B35;
+  font-weight: 600;
+}
+body.theme-light .home__scroll {
+  color: #181B35;
+}
+body.theme-light .section_title {
+  color: #181B35;
+}
+body.theme-light .about__desc {
+  color: #181B35;
+}
+body.theme-light .contacts__title {
+  color: #181B35;
+}
+body.theme-light .contacts__form_tag {
+  color: #181B35;
+}
+body.theme-light .contacts__form_input {
+  color: #181B35;
 }
