@@ -342,6 +342,11 @@ img{
   }
 
 }
+.ab_bx{
+  padding: 10px;
+  background-color: $color4;
+  border-radius: 10px;
+}
 @media (max-width:768px) {
 
 
@@ -887,4 +892,55 @@ body.theme-light{
   .contacts__form_input{
     color: $color2;
   }
+  .about__info{
+    color: $color2;
+
+
+  }
+  .about__title{
+    color: $color2;
+  }
+
+  .scills_content{
+    background-color: white;
+    color: $color2;
+  }
+  .skills__name{
+    color: $color2;
+  }
+  .scills_title{
+    color: $color2;
+  }
+  .servises_card{
+
+    background-color: white;
+  }
+  .servises_title{
+    color: $color2;
+  }
+  .servises__modal{
+    background-color: #C6E6ED;
+  }
+  .contacts__card{
+    background-color: white;
+
+  }
+  .contacts__card_title{
+    color: $color2;
+  }
+  .contacts__card_data{
+    color: $color2;
+  }
+  .contacts__icon{
+    color: $color5;
+  }
+  .contacts__botton{
+    color: $color5;
+  }
+  .about_box_color{
+  background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+
+}
 }
